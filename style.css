@@ -1,0 +1,103 @@
+#contenedor {
+    background-color: coral;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "input input agregar"
+    "input input verTareas"
+    "compras trabajo otros"
+    "contLis contLis contLis ";
+    width: 50%;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid black 3px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+button {
+    height: 3rem;
+    width: auto;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#inputTareas {
+    grid-area: input;
+    margin:  8px;
+}
+
+#eliminar {
+    grid-area: eliminar;
+}
+
+#contenedorLista {
+    width: 100%;
+    grid-area: contLis;
+}
+
+#noTareas {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#incompleto {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#btnEliminar {
+    display: none;
+}
+
+.agregar {
+    grid-area: agregar;
+}
+
+.verTareas {
+    grid-area: verTareas;
+}
+
+.compras {
+    grid-area: compras;
+}
+
+.trabajo {
+    grid-area: trabajo;
+}
+
+.otros {
+    grid-area: otros;
+}
+
+#tareas {
+    grid-area: tareas;
+}
+
+.estiloNuevo {
+    background-color: white;
+    border-radius: 15px;
+    border: solid black 2px;
+    min-height: 70px;
+}
+
+.estiloNuevo button {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-self: end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
